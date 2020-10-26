@@ -47,7 +47,7 @@ function lose(userChoice, computerChoice){
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${convertToWord(userChoice)}${smallUserWord}  loses to  ${convertToWord(computerChoice)}${smallCompWord} , You Lost..!!`;
     userScore_div.classList.add("red-glow");
-    setInterval(function(){ userScore_div.classList.remove('red-glow') },1000);
+    setInterval(function(){ userScore_div.classList.remove('red-glow') },2000);
 }
 //draw function
 function draw(userChoice, computerChoice){
@@ -57,7 +57,7 @@ function draw(userChoice, computerChoice){
 
     result_div.innerHTML = `${convertToWord(userChoice)}${smallUserWord}  equals  ${convertToWord(computerChoice)}${smallCompWord} , It's a Draw.`;
     userScore_div.classList.add("gray-glow");
-    setInterval(function(){ userScore_div.classList.remove('gray-glow') },1000);
+    setInterval(function(){ userScore_div.classList.remove('gray-glow') },2000);
 }
 //combination the match
 function game(userChoice) {
